@@ -1,0 +1,82 @@
+.filter-sidebar {
+    height: 100%;
+    width: 250px;
+    /* Width of the sidebar */
+    position: fixed;
+    top: 0;
+    right: -250px;
+    /* Start off-screen to the right */
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    /* Smooth transition for sliding effect */
+    z-index: 1;
+    /* Make sure it is above other content */
+}
+
+.filter-sidebar.open {
+    transform: translateX(-250px);
+    /* Move into view when open */
+}
+
+.sidebar-content {
+    margin-top: 100px;
+    /* Space for the close button */
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+.btn-close:hover {
+    color: #dc3545;
+}
+
+.filer-btn-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+.filer-btn-close:hover {
+    color: #dc3545;
+}
+
+.dropdown-menu.show {
+    box-shadow: 0px 0px 5px 0px;
+}
+
+.btn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-danger {
+    background-color: #fff;
+    color: black;
+    border: #fff;
+}
+
+.btn-danger:hover {
+    width: 50%;
+}
+
+.select {
+    width: 250px;
+}
+
+/* for multi select drop down */
+
+/* <select name="product[]"class="form-select select"multiple multiselect-search="true"multiselect-select-all="true"multiselect-max-items="3"><?php foreach ($data['drops']['product_result'] as $product) : ?><option><?=$product['product_name'] ?></option><?php endforeach;
+?></select> */

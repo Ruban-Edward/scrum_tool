@@ -1,0 +1,1 @@
+<h1> Access deined, Please login to continue</h1> <a href="<?=site_url()?>">Login</a>

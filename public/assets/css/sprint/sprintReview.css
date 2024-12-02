@@ -1,0 +1,485 @@
+label {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.labelReview {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    font-size: 0.9rem;
+}
+
+.sprintName {
+    color: white;
+}
+
+.task-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.alignTaskInput {
+    margin: 10px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    font-size: 0.7rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+#date-picker {
+    padding: 2px;
+    border: 2px solid #3f51b5;
+    border-radius: 8px;
+    font-family: inherit;
+    opacity: 0.6;
+    font-size: 0.8rem;
+
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+.alert-success {
+    display: none;
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: none;
+    padding: 10px 10px 2px 10px !important;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.user-story-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+.card .card-header {
+    border: none;
+    background-color: #3949AB;
+}
+
+h3 {
+    color: white;
+    font-size: 1rem;
+}
+
+.card .card-header~.card-body {
+    padding-top: 20px;
+}
+
+.burndownCharts {
+    height: 300px;
+}
+
+.multiselect-dropdown-list {
+    padding: 2px;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.table-container {
+    height: 300px;
+    overflow-x: auto;
+    /* margin-top: 20px; */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    position: relative;
+    /* Ensure the row's position is relative */
+}
+
+.table-striped tr {
+    padding-top: 30px;
+    background-color: white;
+    /* Background color to make the text stand out */
+    z-index: 10;
+    /* Ensure the text is above other content */
+    padding: 10px;
+    /* Add some padding for better appearance */
+    border-bottom: 1px solid #ccc;
+    /* Optional: Add a bottom border for better visibility */
+}
+
+.table-striped td {
+    vertical-align: middle !important;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    /* Increased padding for better readability */
+    white-space: normal;
+    font-size: 0.8rem;
+    /* Allow text to wrap within cells */
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #2939AB;
+    /* Dark blue */
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+
+.backlog-cell,
+.epic-cell,
+.user-story-cell {
+  font-weight: bold;
+  vertical-align: middle;
+  word-wrap: break-word; /* Ensure text wraps to the next line */
+  word-break: break-all;
+}
+
+.backlog-details {
+  display: flex;
+  flex-direction: column;
+}
+.epic-cell,.task-cell{
+  width: 22%;
+  word-wrap: break-word; /* Ensure text wraps to the next line */
+  word-break: break-all;
+}
+.status{
+  width: 100%;
+  text-align: center !important;
+}
+.user-story-cell {
+  width: 40%;
+  /* Limit width for better text wrapping */
+  /* Limit max width to prevent overflow on small screens */
+  vertical-align: top;
+  word-wrap: break-word; /* Ensure text wraps to the next line */
+  word-break: break-all;
+}
+.status-cell{
+width: 15%;
+}
+.task-cell {
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  word-wrap: break-word; /* Ensure text wraps to the next line */
+  word-break: break-all;
+  /* Allow tasks to wrap on small screens */
+  /* Ensure tasks take full width on small screens */
+}
+.task-cell b{
+font-weight: 700;
+
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ffc107;
+    color: black;
+}
+
+.status-in-progress {
+    background-color: #ffc107;
+    /* Yellow */
+    color: black;
+    width: fit-content;
+}
+
+.status-to-do {
+    background-color: #007bff;
+    /* Blue */
+    color: white;
+    width: fit-content;
+}
+
+.status-done {
+    background-color: #28a745;
+    /* Green */
+    color: white;
+    width: fit-content;
+}
+
+.completion {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    color: #666;
+    margin-left: 10px;
+}
+
+.pagenav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    margin-bottom: 6px;
+  }
+  .fa-angle-left:before {
+    content: "\f104";
+    font-size: 26px;
+    display: inline-block;
+    padding: 4px
+  }
+  .fa-angle-right:before {
+    content: "\f105";
+    font-size: 26px;
+    display: inline-block;
+    padding: 4px
+  }
+
+.table-style {
+    height: 400px;
+}
+
+.pagenav {
+    /* position: absolute; */
+    z-index: 100;
+    /* bottom: 0px;
+    left: 0;
+    width: 100%; */
+}
+
+
+.backlog-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-striped:hover nav {
+    display: block;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-top: 4px;
+    width: 75px;
+}
+
+.pagebutton {
+    height: 25px;
+    width: 25px;
+    background-color: #2939AB;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+.progress {
+    height: 100%;
+    border-radius: 4px;
+    background-color: #4caf50;
+    /* Green */
+}
+
+#statusFilter {
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    background-color: lightgray;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+}
+
+/* For member display */
+.addmem {
+    margin-bottom: 1rem !important;
+    width: 14%;
+    font-size: 0.9rem;
+}
+
+.table {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#paginationControls {
+    justify-content: flex-end !important;
+}
+textarea.form-control {
+    min-height: calc(1.5em + .75rem + 2px);
+    font-size: .8rem;
+}
+.mic-button {
+    position: absolute;
+    right: 10px;
+    bottom: 20%;
+    left: 94%;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #3f51b5;
+    cursor: pointer;
+}
+
+.mic-button:hover {
+    color: #303f9f;
+}
+
+.mic-button.recording {
+    color: #ff0000;
+}
+#backlogName{
+    margin:10px 0px;
+  }
+  #backlogName h6{
+    display: inline;
+  }
+  #backlogName span{
+    display: inline;
+    padding: 10px;
+  }
+  .paginationControls .btn-pagination{
+    border-radius:50%; 
+    height:50px; 
+    width:50px; 
+    }
+  @media (min-width: 320px) and (max-width: 480px) {
+    h3 {
+      color: white;
+      font-size: var(--MOBILESMALLHEADER);
+  }
+
+#statusFilter {
+    padding: 4px;
+    margin: 10px;
+    border: none;
+    background-color: lightgray;
+    border-radius: 1rem;
+    font-size: var(--MOBILETEXTSIZE);
+}
+#backlogName h6{
+    display: inline;
+    font-size: var(--MOBILETEXTSIZE);
+  }
+  #backlogName span{
+    display: inline;
+    padding: 10px;
+    font-size: var(--MOBILETEXTSIZE);
+  }
+  .table-striped td {
+    vertical-align: middle !important;
+    font-size: var(--MOBILETEXTSIZE);
+}
+.table:not(.table-borderless) thead th, .dataTable-table:not(.table-borderless) thead th {
+    border-bottom: 1px solid #dedede !important;
+    font-size: var(--MOBILETEXTSIZE);
+}
+.table {
+    border-radius: 4px;
+    overflow: scroll;
+}
+.fa-angle-right:before {
+    content: "\f105";
+    font-size: 20px;
+    display: flex;
+    padding: 4px;
+}
+.fa-angle-left:before {
+    content: "\f104";
+    font-size: 20px;
+    display: flex;
+    padding: 4px;
+}
+#date-picker {
+    font-size: var(--MOBILETEXTSIZE);
+    width: 100px;
+}
+
+#sprintReviewForm .offset-4 {
+    margin-left: 0% !important;
+}
+.mic-button {
+    position: absolute;
+    right: 10px;
+    bottom: 20%;
+    left: 78%;
+    background: none;
+    border: none;
+    font-size: var(--MOBILEHEADERFONTSIZE);
+    color: #3f51b5;
+    cursor: pointer;
+}
+.form-label {
+    font-size: 12px !important;
+}
+.addmem {
+    margin-bottom: 1rem !important;
+    width: 41%;
+    font-size: var(--MOBILETEXTSIZE);
+}
+.membervisibility .input-group{
+    width: 64% !important;
+}
+.paginationControls .btn-pagination{
+    height: 30px !important;
+    width: 30px !important;
+}
+.text-center .btn-primary {
+    font-size: var(--MOBILETEXTSIZE);
+    padding: 6px 10px;
+}
+.cls-h2 span{
+    font-size: var(--MOBILESMALLHEADER) !important;
+}
+}

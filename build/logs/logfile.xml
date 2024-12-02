@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/var/www/html/scrum_tool/phpunit.xml" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="13.448353">
+    <testsuite name="App" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="13.448353">
+      <testsuite name="App\Controllers\SettingsControllerTest" file="/var/www/html/scrum_tool/tests/app/Controllers/SettingsControllerTest.php" tests="1" assertions="4" errors="0" failures="0" skipped="0" time="13.448353">
+        <testcase name="testSetProductOwner" file="/var/www/html/scrum_tool/tests/app/Controllers/SettingsControllerTest.php" line="254" class="App\Controllers\SettingsControllerTest" classname="App.Controllers.SettingsControllerTest" assertions="4" time="13.448353"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

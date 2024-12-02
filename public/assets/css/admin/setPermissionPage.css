@@ -1,0 +1,176 @@
+/* .content-header {
+    color: #3949AB;
+    font-size: 2rem;
+} */
+
+.cls-select {
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.cls-select label {
+    font-weight: 700;
+}
+
+.cls-select select {
+    width: 250px;
+    font-size: 0.8rem;
+}
+
+.cls-header {
+    background-color: #3949AB;
+    color: white;
+    padding-top: 16px;
+    padding-left: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.cls-body {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.cls-checkbox {
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.cls-checkbox .cls-header {
+    padding-bottom: 8px;
+
+}
+
+.cls-checkbox .cls-body h5 {
+    color: #3949AB;
+    font-size: 1rem;
+}
+
+.cls-main-select {
+    text-align: left;
+}
+
+.cls-sub-select {
+    margin-left: 30px;
+}
+
+.cls-submit {
+    margin-top: 20px;
+    text-align-last: end;
+}
+
+.btn {
+    padding: 5px 15px;
+    font-weight: 700;
+}
+
+.cls-all {
+    margin-bottom: 20px;
+    font-size: .9rem;
+}
+.form-check-input[type=checkbox] {
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-item {
+    width: 33%;
+    margin-bottom: 10px;
+}
+
+.checkbox-container label {
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+
+.cls-module-select {
+    display: flex;
+}
+
+input {
+    margin-right: 5px;
+}
+
+h4 {
+    color: white;
+    font-size: 1rem;
+}
+
+.button {
+    background-color: #4A90E2;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 20px;
+    border-radius: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+    border: none;
+}
+
+.cls-buttons {
+    text-align: start;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.modal-header {
+    background-color: #3949ab;
+    color: white;
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.modal-body label {
+    color: #3949ab;
+    font-weight: 700;
+}
+
+.modal-body input {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.modal-body select {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+.checkbox-item {
+    width: 100%;
+    margin-bottom: 10px;
+}
+h4 {
+    color: white;
+    font-size: var(--MOBILEHEADERFONTSIZE);
+}
+.cls-checkbox .cls-body h5 {
+    color: #3949AB;
+    font-size: var(--MOBILESMALLHEADER);
+}
+
+.cls-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.cls-buttons span{
+    display: none;
+}
+
+}

@@ -1,0 +1,467 @@
+.page {
+    width: 100%;
+    height: auto;
+}
+
+/**Header buttons */
+.btn_select {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.btn_select::after {
+    display: none;
+}
+
+.dropdown-menu {
+    padding: 15px;  
+    min-width: 300px;
+}
+
+/** Dropdown Form Elements */
+.dropdown-menu .form-label {
+    margin-bottom: 5px;  
+}
+
+.dropdown-menu .form-select {
+    margin-bottom: 15px; 
+}
+
+.dropdown-menu .btn-primary {
+    background-color: #3949AB;  
+    border: none;
+    color: white;
+    padding: 10px 15px;  
+    border-radius: 5px;
+}
+
+.dropdown-menu .btn-primary:hover {
+    background-color: #357ABD;  /* Hover effect for the button */
+}
+
+/** Ensure form elements inside the dropdown are properly styled */
+#filterOptionsForm {
+    margin-bottom: 10px;  /* Add space below the form */
+}
+
+.li {
+    list-style: none;
+}
+
+td,
+th {
+    vertical-align: middle;
+}
+
+thead tr th input {
+    align-items: center;
+    width: 40px;
+    color: #000;
+}
+
+thead tr th {
+    align-items: center;
+}
+
+tr {
+    height: 50px;
+}
+
+table {
+    color: #000;
+    table-layout: fixed; /* Ensure consistent column widths */
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    /* White background */
+}
+
+.display {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.header_color th {
+    background-color: #d3e3f3;
+    color: black;
+}
+
+.option-button li{
+    list-style: none;
+}
+
+.btn_group {
+    padding: 1px;
+    background-color: #3939AB;
+    border: none;
+    color: white;
+    width: 60px;
+    list-style-type: none;
+}
+
+.btn_group::after {
+    display: none;
+}
+
+/* Emoji size */
+.bi {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/** Priority Button color */
+.priority-l {
+    background-color: #26d54f; /* Light green */
+    color: #155724; /* Dark green */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Medium priority */
+.priority-m {
+    background-color: #eccb5e; /* Light yellow */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* High priority */
+.priority-h {
+    background-color: #de0517; /* Light red */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/**Data tables CSS */
+th.sorting,
+th.sorting_asc,
+th.sorting_desc {
+    position: relative;
+    padding-right: 30px;
+}
+
+th.sorting:after,
+th.sorting_asc:after,
+th.sorting_desc:after {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+th.sorting:before,
+th.sorting_asc:before,
+th.sorting_desc:before {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Pagination style (if needed for other components) */
+.pagination {
+    margin-top: 20px;
+}
+
+.button {
+    color: #fff;
+    background-color: #4A90E2;
+    font-size: 1rem;
+    padding: 5px 20px; /* Adjusted padding for better alignment */
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* text-transform: uppercase; Makes the text uppercase */
+    font-weight: bold; /* Makes the text bold */
+    cursor: pointer;
+    margin-right:5px ;
+}
+
+.button:hover {
+    background-color: #357ABD; /* Slightly darker blue for hover effect */
+}
+
+/* Sortable table row helper styling */
+/* Adjust sortable helper styling */
+.sortable-helper {
+    display: table;
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 2px solid #3498db;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    margin-left: 5px;
+    text-align: center; /* Optional: Add shadow for better visibility */
+}
+
+/* Ensure dragged row follows the column widths */
+.ui-sortable-helper {
+box-sizing: border-box;
+border: 1px solid #ddd; /* Optional: Add border for better visibility */
+background-color: #f9f9f9; /* Optional: Change background color for the helper row */
+}
+
+/* Optional: Define a minimum height for the dragged row */
+.ui-sortable-helper {
+min-height: 50px;
+}
+/* General priority box styles */
+
+
+/* Low priority */
+.priority-L {
+    background-color: #26d54f; /* Light green */
+    color: #155724; /* Dark green */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Medium priority */
+.priority-M {
+    background-color: #eccb5e; /* Light yellow */
+    color: #856404; /* Dark yellow */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* High priority */
+.priority-H {
+    background-color: #de0517; /* Light red */
+    color: #721c24; /* Dark red */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sortable-helper {
+    background-color: #d8e5f0;  /* Light background for the helper */
+    border: 1px dashed #007bff;  /* Dashed border for the helper */
+    z-index: 1000;  /* Ensure the helper is above other elements */
+}
+
+.placeholder {
+    background-color: #dcdcdc;  /* Different background for the placeholder */
+    border: 1px solid #007bff;  /* Border for the placeholder */
+    height: 50px;  /* Same height as rows */
+    line-height: 50px;  /* Center the placeholder text */
+    text-align: center;  /* Center the placeholder text */
+    color: #888;  /* Light gray text */
+}
+
+.selected {
+    background-color: #e0e0e0;  /* Highlight dragged row */
+}
+
+tr {
+    transition: background-color 0.3s ease;
+}
+
+.dragging {
+    background-color: #e0e0e0;  /* Highlight dragged row */
+    border: 1px solid #007bff;  /* Border for the dragged row */
+    color: #000;  /* Ensure text color is readable */
+}
+
+.filter-sidebar {
+    height: 100%;
+    width: 250px; /* Width of the sidebar */
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start off-screen to the right */
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+    z-index: 1; /* Make sure it is above other content */
+}
+
+.filter-sidebar.open {
+    transform: translateX(-250px); /* Move into view when open */
+}
+
+.sidebar-content {
+    margin-top: 100px; /* Space for the close button */
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white; 
+}
+
+.btn-close:hover {
+    color: #dc3545;
+}
+
+.filer-btn-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white; 
+}
+
+.filer-btn-close:hover {
+    color: #dc3545;
+}
+
+tbody{
+    position: relative;
+    top: 10px; 
+}
+
+
+
+
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    background-color: #4A90E2;
+    border: 1px solid #4A90E2;
+    border-radius: 5px;
+    padding: 7px 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.search-box.expanded {
+    width: 210px;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    font-weight: 700;
+    color: white;
+    width: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.search-box.expanded .search-input {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.search-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0 5px;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+}
+
+.search-button i {
+    margin-right: 10px;
+}
+
+.search-input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+/* Hide placeholder when not expanded */
+.search-box:not(.expanded) .search-input::placeholder {
+    color: transparent;
+}
+
+/* Hide the "Search" text when expanded */
+.search-box.expanded .search-button span {
+    display: none;
+}
+.bi-search:before {
+display: block;
+}
+
+.capitalize-text {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+.heading {
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.bar{
+    margin: -4px 10px;
+}
+
+.header_color th:first-child{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.header_color th:last-child{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+tbody{
+    position: relative;
+    top: 10px; 
+}
+
+.action_button a{
+    margin-right: 15px;
+}
+h5, .h5 {
+    font-size: 1rem;
+}
+
+tbody tr:first-child td:first-child {
+    border-top-left-radius: 7px !important;
+    /* border-bottom-left-radius: 7px !important; */
+}
+tbody tr:first-child td:last-child {
+    border-top-right-radius: 7px !important;
+    /* border-bottom-right-radius: 7px !important; */
+}
+tbody tr:last-child td:first-child  {
+    /* border-top-left-radius: 7px !important; */
+    border-bottom-left-radius: 7px !important;
+}
+tbody tr:last-child td:last-child  {
+    /* border-top-right-radius: 7px !important; */
+    border-bottom-right-radius: 7px !important;
+} 
+
+tbody{
+    background-color: #ffffff;
+}

@@ -1,0 +1,308 @@
+
+body {
+    max-width: 1780px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header img {
+    height: 45px;
+    margin: 0 4.5%;
+}
+
+.cls-login-form{
+    min-height: 80%;
+    padding: 0 3%;
+    background-color: #E5F4FF;
+}
+.col-md-7{
+    padding: 0;
+    margin: 5% 0;
+}
+.col-md-5{
+    margin: 3% 0;
+}
+
+.cls-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2%;
+}
+.cls-scrum-img{
+    position: relative;
+}
+.cls-background-col{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d6ebfa;
+    opacity: 0.6;
+}
+.cls-left img {
+    width: 100%;
+    height: 100%;
+}
+.cls-right {
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+}
+.cls-form{
+    width: 100%;
+    height: 100%;
+}
+.form-group{
+    min-height: 100px;
+}
+.valid-feedback{
+    font-size: 12px;
+    margin-top: -12px;
+    margin-bottom: 10px;
+    color: green; 
+}
+.invalid-feedback , .cls-error-msg{
+    font-size: 12px;
+    margin-top: -12px;
+    margin-bottom: 10px;
+    color: red;
+}
+.cls-wrong-username-password{
+    color: red;
+    text-align: center;
+}
+.cls-right h2 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: nunito;
+}
+.cls-right p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+.cls-right form {
+    /* display: flex;
+    flex-direction: column; */
+    padding: 2% 0;
+}
+.cls-password{
+    position: relative;
+}
+.cls-password i{
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    font-size: 1.5rem;
+}
+.cls-right input {
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.cls-right label{
+    margin-bottom: 2%;
+}
+.cls-right button {    
+    background: linear-gradient(90deg, rgba(9,9,121,1) 63%, rgba(17,209,247,1) 100%);
+    margin: 15px 0 ;
+    transition: 3s ease;
+}
+.cls-right button:hover {
+    background: linear-gradient(270deg, rgba(9,9,121,1) 63%, rgba(17,209,247,1) 100%);
+}
+/* .cls-right a {
+    text-align: right;
+    font-size: 14px;
+    color: #004AA8;
+    text-decoration: none;
+}
+.cls-right a:hover {
+    text-decoration: underline;
+} */
+footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #888;
+}
+footer p {
+    margin: 10px 5%;
+}
+.row{
+    margin: 0;
+}
+
+.btn-primary{
+    padding: 9px;
+    border-radius: 4px;
+    border-right: unset;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+     header img {
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cls-left{
+        display: none;
+    }
+    .cls-scrum-img{
+        display: none;
+        margin: 0;
+    }
+    .cls-right h2 {
+        margin: 0;
+        margin-top: 14%;
+        text-align: center;
+        font-size: 2rem;
+        font-family: nunito;
+    }
+    .cls-right p {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: unset;
+    }
+    .cls-right label {
+        font-size: 0.8rem;
+        padding-left: 14%;
+        padding-top: 8%;
+    }
+    .cls-right input {
+        height: 30px;
+        width: 74%;
+        padding: 15px;
+        margin-left: 14%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .cls-right input::placeholder {
+        font-size: 0.8rem;
+    }
+    .form-group {
+        min-height: 50px;
+    }
+    .cls-password i {
+        position: absolute;
+        top: 29%;
+        right: 13%;
+        font-size: 0.6rem;
+    }
+    .btn-primary {
+        padding: 5px;
+        margin: 25px 34% !important;
+        width: 35%;
+        font-size: 0.8rem;
+        border-radius: 4px;
+        border-right: unset;
+    }
+    footer {
+        width: 100%;
+        height: 10%;
+        align-items: center;
+        justify-content: end;
+        font-size: 0.9rem;
+        display: flex;
+        color: #888;
+    }
+    footer p {
+        margin: 10px 5%;
+        font-size: 0.6rem;
+        text-align: end;
+        width: 50%;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    header img {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cls-left {
+        display: none;
+    }
+    .cls-scrum-img {
+        display: none;
+        margin: 0;
+    }
+    .cls-right h2 {
+        margin: 0;
+        margin-top: 10%;
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: nunito;
+    }
+    .cls-right p {
+        font-size: 1rem;
+        text-align: center;
+        padding: unset;
+    }
+    .cls-right label {
+        font-size: 1rem;
+        padding-left: 12%;
+        padding-top: 5%;
+    }
+    .cls-right input {
+        height: 50px;
+        width: 80%;
+        padding: 15px;
+        margin-left: 12%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .cls-right input::placeholder {
+        font-size: 0.9rem;
+    }
+    .form-group {
+        min-height: 60px;
+    }
+    .cls-password i {
+        position: absolute;
+        top: 29%;
+        right: 12%;
+        font-size: 1rem;
+    }
+    .btn-primary {
+        padding: 7px;
+        margin: 20px 33% !important;
+        width: 40%;
+        font-size: 0.9rem;
+        border-radius: 4px;
+        border-right: unset;
+    }
+    footer {
+        width: 100%;
+        height: 10%;
+        align-items: center;
+        justify-content: end;
+        font-size: 1rem;
+        display: flex;
+        color: #888;
+    }
+    footer p {
+        margin: 10px 5%;
+        font-size: 0.8rem;
+        text-align: end;
+        width: 50%;
+    }
+}

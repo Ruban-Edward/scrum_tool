@@ -1,0 +1,243 @@
+:root {
+    --primary-color: #3949AB;
+    --secondary-color: #4A90E2;
+    --accent-color: #F1C40F;
+    --bg-color: #f5f7fa;
+    --text-color: #333;
+}
+
+
+.main-content .content-header {
+    font-weight: 700;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    margin-bottom: 16px;
+}
+
+.main-content .card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.pointer strong{
+    text-decoration: underline;
+}
+
+/* .main-content .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+} */
+
+.main-content .card-header {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 5px 15px;
+    justify-content: space-between; 
+    display: flex;
+    font-size: 1.6rem;
+}
+.dashboardSearchInput{
+    padding: 2px 10px;
+    font-size: 0.8rem;
+    margin: 4px 0px;
+}
+.main-content .bg-card-1{
+    background-image: linear-gradient(180deg, #82c51f 2.9%, #34be34 90.3%);
+}
+
+.main-content .bg-card-2, .cls-delayed-sprint{
+    background-image: linear-gradient(180deg, #d64242, #E62020);
+}
+
+.main-content .bg-card-3{
+    background-image: linear-gradient(180deg, #49b7bf, #63a4ff);
+}
+
+.main-content .bg-card-1 h5,.main-content .bg-card-2 h5,.main-content .bg-card-3 h5{
+    color: white;
+    font-size: 1.1rem;
+}
+b, strong {
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+/* .card h5 {
+    color: white;
+    text-align: center;
+} */
+.main-content .card-header h4{
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+.dashboardSearch{
+    width:20% !important;
+}
+.cls-cardHeader{
+    display: flex;
+    align-items: center;
+}
+.cls-packIcon{
+    margin-bottom: 1px;
+}
+
+.cls-delayed-product{
+    background: linear-gradient(180deg, #d64242, #E62020);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+/* .card .cls-span{
+    font-weight: 900;
+    font-size: 1rem;
+} */
+.main-content .badge{
+    font-size: 13px;
+    font-weight: bolder;
+}
+.main-content .btn {
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.main-content .btn i{
+    margin-right: 5px;
+}
+/* .main-content .btn:hover {
+    background-color: #D4AC0D;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.main-content .list-group-item {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent ;
+    transition: all 0.3s ease;
+}
+
+.main-content .list-group-item:hover {
+    /* border-left-color: var(--accent-color); */
+    background-color: #f8f9fa;
+}
+
+.main-content .list-group.product-items {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.main-content .card-title {
+    color: var(--primary-color) ;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.main-content .card-text {
+    margin-bottom: 0px;
+    color: white;
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+.card-body i{
+    color: white;
+}
+
+.product-items .badge{
+    color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    background-color: var(--secondary-color);
+    font-size: 0.7rem;
+    border: none;
+}
+
+.cls-active-sprints {
+    display: flex; 
+    justify-content: left;
+}
+
+.cls-active-sprints .cls-sprints{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.cls-active-sprints .cls-sprints form {
+    display: inline-block;
+}
+.cls-active-sprints  .dashboardSprint{
+    font-size: .8rem;
+}
+
+.cls-active-sprints  .dashboardSprintEndDate{
+    font-size: .7rem;
+}
+form .view{
+    color: #3949AB !important;
+    padding: 0px !important;
+}
+
+.empty-content h4{
+    margin: 0;
+}
+.cls-noProductIcon{
+    font-size: 4rem;
+}
+.list-group-item:last-child {
+    border: none;
+}
+
+.cls-noProduct{
+    margin: 80px;
+}
+.cls-active-products{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+}
+
+/* .cls-backlogs:hover{
+    overflow: visible;
+    white-space: normal;
+}
+
+.cls-backlogs form{
+    display: inline-block;
+} */
+.product { 
+    font-weight: 900;
+    padding: 10px 0px;
+}
+
+.product-hide{
+    display: none !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+  

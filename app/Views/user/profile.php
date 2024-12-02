@@ -1,0 +1,1 @@
+<h1> Welcome Admin </h1> <a href="<?=site_url()?>logout">Logout</a>

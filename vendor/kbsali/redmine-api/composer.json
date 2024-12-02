@@ -1,0 +1,69 @@
+{
+    "name": "kbsali/redmine-api",
+    "type": "library",
+    "description": "Redmine API client",
+    "homepage": "https://github.com/kbsali/php-redmine-api",
+    "keywords": [
+        "redmine",
+        "api"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Saliou",
+            "email": "kevin@saliou.name",
+            "homepage": "http://kevin.saliou.name"
+        },
+        {
+            "name": "Artur Weigandt",
+            "email": "artur@wlabs.de",
+            "homepage": "https://wlabs.de"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-curl": "*",
+        "ext-simplexml": "*",
+        "ext-json": "*",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14",
+        "friendsofphp/php-cs-fixer": "^3.45",
+        "guzzlehttp/psr7": "^2",
+        "php-mock/php-mock-phpunit": "^2.6",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9.5 || ^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Redmine\\": "src/Redmine/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Redmine\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "bdt": [
+            "@behat --format=progress --suite=redmine_50103",
+            "@behat --format=progress --suite=redmine_50009",
+            "@behat --format=progress --suite=redmine_40210"
+        ],
+        "behat": "behat --config tests/Behat/behat.yml",
+        "codestyle": "php-cs-fixer fix",
+        "coverage": "phpunit --coverage-html=\".phpunit.cache/code-coverage\"",
+        "phpstan": "phpstan analyze --memory-limit 512M --configuration .phpstan.neon",
+        "phpunit": "phpunit",
+        "test": [
+            "@phpstan",
+            "@phpunit",
+            "@codestyle --dry-run --diff"
+        ]
+    }
+}
